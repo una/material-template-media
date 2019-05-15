@@ -22,6 +22,7 @@
     "webpack-dev-server": "^3.1.11"
   },
   "dependencies": {
+    "@material/card": "^2.1.1",
     "@material/drawer": "^1.0.0",
     "@material/top-app-bar": "^1.0.0",
     "@material/typography": "^1.0.0"

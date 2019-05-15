@@ -1,7 +1,5 @@
 body {
-  background: #f5f5f5;
   display: flex; // Removes top gap between modal drawer and viewport
-  height: 100vh; // Ensures that permanent drawer extends to bottom of viewport
   margin: 0; // Removes top gap between top app bar and viewport
 }
 
@@ -12,4 +10,19 @@ body {
 
 .main-content {
   margin: 20px 50px;
+}
+
+// Navigation
+.nav-title {
+  margin: 16px 0 0 16px;
+}
+
+// Cards on Homepage
+.horizontal-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.demo-card__media.mdc-card__media--square {
+  width: 110px;
 }

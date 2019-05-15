@@ -1,0 +1,15 @@
+body {
+  background: #f5f5f5;
+  display: flex; // Removes top gap between modal drawer and viewport
+  height: 100vh; // Ensures that permanent drawer extends to bottom of viewport
+  margin: 0; // Removes top gap between top app bar and viewport
+}
+
+.mdc-top-app-bar {
+  @include mdc-top-app-bar-fill-color-accessible(white);
+  @include mdc-top-app-bar-icon-ink-color(rgba(0, 0, 0, 0.6));
+}
+
+.main-content {
+  margin: 20px 50px;
+}

@@ -1,0 +1,10 @@
+// Material Theming
+@import 'my-theme';
+
+// Import the styles for each MDC Web component
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/typography/mdc-typography";
+
+@import 'my-components'

@@ -13,7 +13,8 @@ body {
 }
 
 .main-content {
-  margin: 20px 50px;
+  margin: 20px auto;
+  max-width: 1024px;
 }
 
 // Navigation
@@ -27,6 +28,10 @@ body {
   flex-direction: row;
 }
 
+.horizontal-card .demo-card__primary {
+  width: calc(100% - 150px);
+}
+
 .demo-card__meta {
   display: flex;
   justify-content: space-between;
@@ -34,7 +39,7 @@ body {
 }
 
 .demo-card__media.mdc-card__media--square {
-  width: 110px;
+  width: 150px;
 }
 
 .demo-card__primary {
@@ -47,6 +52,11 @@ body {
 
 .mdc-card__primary-action {
   height: 100%;
+}
+
+.demo-card .mdc-typography--subtitle1,
+.demo-card .mdc-typography--headline2 {
+  margin: 0;
 }
 
 @media screen and (min-width: 400px) {

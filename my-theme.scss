@@ -2,3 +2,9 @@
 
 // Define theme variables before importing any MDC Web component styles
 $mdc-theme-primary: #6200ee;
+
+// Typography
+$mdc-typography-styles-overline: (
+  color: #555,
+  text-transform: none
+);

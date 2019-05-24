@@ -7,7 +7,7 @@ import {MDCList} from "@material/list";
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const listEl = document.querySelector('.mdc-drawer .mdc-list');
 const drawerElement = document.querySelector('.mdc-drawer');
-const mainContentEl = document.querySelector('.main-content');
+const mainContentEl = document.querySelector('main');
 
 // Initialize top app bar
 

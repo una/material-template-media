@@ -11,10 +11,15 @@ img {
   width: 100%;
 }
 
-main {
+.contained-section {
   max-width: $pageMax;
   padding: 16px;
   width: calc(100vw - 32px);
+  margin: 0 auto;
+}
+
+.header-section {
+  display: none;
 }
 
 // Navigation
@@ -22,6 +27,7 @@ main {
   @include mdc-top-app-bar-fill-color-accessible(white);
   @include mdc-top-app-bar-icon-ink-color(rgba(0, 0, 0, 0.6));
   border-bottom: 1px solid #ddd;
+  position: absolute;
 }
 
 .mdc-top-app-bar--fixed-adjust {
@@ -30,6 +36,29 @@ main {
 
 .nav-title {
   margin: 16px 0 0 16px;
+}
+
+.topic-section {
+  display: flex;
+  align-items: center;
+}
+
+.topics {
+  padding: 0 0 0 8px;
+}
+
+.topic {
+  display: inline-block;
+}
+
+.topic a {
+  color: $mdc-theme-primary;
+  font-weight: 500;
+  margin-left: 16px;
+}
+
+.mdc-top-app-bar--fixed-adjust {
+  padding-top: 64px;
 }
 
 // Cards on Homepage
@@ -124,6 +153,17 @@ main {
   .right {
     flex-direction: column;
     margin-left: 32px;
+  }
+
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: -16px;
+  }
+
+  .mdc-top-app-bar--fixed-adjust {
+    padding-top: 128px;
   }
 }
 

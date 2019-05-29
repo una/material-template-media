@@ -1,3 +1,7 @@
+// Variables
+$pageMax: 1024px;
+$articleMax: 800px;
+
 body {
   display: flex; // Removes top gap between modal drawer and viewport
   margin: 0; // Removes top gap between top app bar and viewport
@@ -8,7 +12,7 @@ img {
 }
 
 main {
-  max-width: 1024px;
+  max-width: $pageMax;
   padding: 16px;
   width: calc(100vw - 32px);
 }
@@ -54,6 +58,12 @@ main {
 
 .mdc-card + .mdc-card {
   margin-top: 16px;
+}
+
+.demo-card,
+.demo-card a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .mdc-card__primary-action {
@@ -115,4 +125,56 @@ main {
     flex-direction: column;
     margin-left: 32px;
   }
+}
+
+// Article Page
+
+.article {
+  max-width: $articleMax;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-title {
+  margin: 0;
+}
+
+.article-preview {
+  max-width: 340px;
+  line-height: 1.8;
+}
+
+.article-body p:first-child::first-letter {
+  font-size: 86px;
+  font-style: italic;
+  font-weight: 800;
+  initial-letter: 2;
+  float: left;
+  line-height: 1;
+  padding-right: 16px;
+}
+
+.author {
+  color: $mdc-theme-primary;
+}
+
+.author-meta {
+  display: flex;
+  align-items: center;
+  margin-top: -16px;
+  text-decoration: none;
+}
+
+.author-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.hero-caption {
+  max-width: 500px;
 }
